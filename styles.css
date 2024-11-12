@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   line-height: 1.8em;
-
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) .3s;
 }
 
 :root {
@@ -24,6 +24,11 @@
     transform: translateX(0);
   }
 }
+a{
+  text-decoration: none;
+  color: white;
+}
+
 
 .btn--util {
   display: flex;
@@ -31,7 +36,7 @@
   justify-content: center;
   gap: 1em;
   align-items: center;
-
+  height: 100%;
   padding: 0.8em 2em;
   text-transform: capitalize;
   font-size: 0.8em;
@@ -41,6 +46,19 @@
   border-radius: 0.5em;
   background-color: #1c1c1c;
   color: white;
+}
+.btn--util:hover{
+  background: #ccff00;
+  outline: 1px solid black;
+  color: #1c1c1c;
+}
+.btn--util:hover a {
+  color: #1c1c1c;
+}
+.btn--util:hover{
+  background: #ccff00;
+  outline: 1px solid black;
+  color: #1c1c1c;
 }
 
 .container {
@@ -227,7 +245,7 @@ main section div {
 
 .content-box div p {
   text-transform: normal;
-  font-size: 0.84em;
+  font-size: 0.73rem;
   text-align: center;
 }
 
