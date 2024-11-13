@@ -119,23 +119,21 @@ nav button.btn--util {
 
 @keyframes menu {
   from {
-    opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(1000px);
   }
 
   to {
-    opacity: 1;
     transform: translateX(0px);
   }
 }
 
 .links-parent {
-  display: none;
+  display:none ;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   height: 100%;
-  width: 70%;
+  width: 60%;
   border-radius: 1em;
   padding: .5em;
   gap: .5em;
@@ -146,15 +144,14 @@ nav button.btn--util {
   top: 0;
   text-align: right;
   z-index: -1;
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
-  animation: menu ease-in-out;
-
+  transition: all linear 0.3s;
+  animation: menu ease-out .3s;
+  animation-duration: .3s;
   box-shadow: -20px 10px 100px rgba(0, 0, 0, 0.363);
 }
 
 .open {
   display: flex;
-  animation: menu ease-in-out;
 }
 .menu {
   padding: 0.5em 1em;
@@ -162,6 +159,7 @@ nav button.btn--util {
   border-radius: 0.5em;
   font-size: 1em;
   color: #ccff00;
+  cursor: pointer;
 }
 
 .logo-container img {
